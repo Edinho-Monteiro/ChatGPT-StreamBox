@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces</title>
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h2>Doces</h2>
+    </header>
+
+    <main>
+
+        <!-- <p><h1><center>Além dos Versículos</center></h1></p> -->
+        <!-- <p><h3><center>Adiocionar a partir do...</center></h3></p> -->
+
+        <div class="buttons">
+            <center>
+                <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='../doces/biscoitos.html')">Biscoitos e Bolachas</a>                                                                                     
+            <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='../doces/bolos.html')">Bolos e Tortas</a>                                              
+            <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='../doces/docesTradicionais.html')">Doces Tradicionais</a>                                              
+            <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='../doces/mousses.html')">Mousses</a>                                              
+            <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='../doces/sobremesas.html')">Sobremesas</a>                                              
+            </center>
+        </div>
+        
+        <div class="buttons">
+            <center>
+            <a href="#" class="button-3d2" data-tooltip="" href="#" onclick="openVideo (href='../../receitas/receitas.html')">Receitas</a>            
+            </center>
+        </div>
+
+        <iframe id="videoFrame" src=""></iframe>
+
+    </main>
+
+    <footer>
+        <p>Faça dos seus Sonhos, um objetivo</p>
+    </footer>
+
+    <script>
+        function openVideo(url) {
+            document.getElementById('videoFrame').src = url;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h2>MyTube</h2>
+    </header>
+    <main>
+        <!-- <p><h1><center>Título 01</center></h1></p> -->
+        <!-- <p><h3><center>Clique no botão abaixo</center></h3></p> -->
+        <center><img src="./image/logo.jpg" alt="StreamBox Logo"></center>
+
+        <div class="buttons">
+            <center>     
+                <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='./cristao/cristao.html')">Cristão</a>              
+                <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='./documentario/documentario.html')">Documentário</a>              
+                <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='./programacao/links/links.html')">Links</a>              
+                <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='./musica/musica.html')">Música</a>              
+                <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='./programacao/programacao.html')">Programação</a>              
+                <!-- <a href="#" class="button-3d" data-tooltip="" href="#" onclick="openVideo (href='./receitas/receitas.html')">Receitas</a>               -->
+            </center>
+        </div>
+
+        <div class="buttons">
+            <center>
+                <a href="#" class="button-3d2" data-tooltip="" href="#" onclick="verificarSenha()">Acesso Restrito</a>     
+            </center>                
+        </div>    
+
+        <!-- <center><img src="./image/imagem.webp" alt=""></center> -->
+
+        <iframe id="videoFrame" src=""></iframe>
+        
+    </main>
+
+    <footer>
+        <!-- <div class="marquee"> -->
+        <div">
+            <p>Faça dos seus Sonhos, um objetivo...</p>
+        </div>
+    </footer>
+
+    <script>
+        function openVideo(url) {
+            document.getElementById('videoFrame').src = url;
+        }
+    </script>
+        <script>
+            function verificarSenha() {
+                var senha = prompt("Por favor, insira a senha:");
+                if (senha === "flatplana") {
+                    location.href = './artesanato/artesanato.html';
+                } else {
+                    alert("Senha incorreta. Tente novamente.");
+                }
+            }
+        </script>
+</body>
+</html>
